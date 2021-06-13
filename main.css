@@ -137,8 +137,18 @@ header .navigation li a:hover {
 	padding: 10px 20px;
 	border-radius: 30px;
 	text-decoration: none;
+		transition: 0.5s;
 
 
+}
+
+.banner .content a:hover {
+
+	letter-spacing: 1px;
+	transition: 0.5s;
+	background: none;
+	color: #fff;
+	border: 1px solid #fff;
 }
 .banner .imgCnt img {
 
