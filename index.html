@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+	<section>
+		<div class="bg">
+	<header>
+		<a href="#" class="logo">Frutis</a>
+		<div class="toggleMenu" onclick="toggleMenu()";></div>
+		
+        <ul class="navigation">
+        	<li><a href="#" class="actives">Home</a></li>
+        	<li><a href="#">Menu</a></li>
+        	<li><a href="#">What`s New</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+		
+	</header>
+
+	<div class="banner">
+    <div class="content">
+    	<h1>Eat Fresh<br> Everyday</h1>
+    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    	consequat.</p>
+    	<div class="btn">
+    	<a href="#">Learn More</a>
+    </div>
+    </div>
+    <div class="imgCnt">
+    	<img src="img/apple.png" class="frutis">
+    </div>
+	</div>
+
+	
+		<ul class="thumb">
+			<li><img src="img/dragonFruits.png" onclick="imgSlider('img/dragonFruits.png');changeBgColor('#fc4a55')"></li>
+			<li><img src="img/mango.png" onclick="imgSlider('img/mango.png');changeBgColor('#ffcc02')"></li>
+			<li><img src="img/pineApple.png" onclick="imgSlider('img/pineApple.png');changeBgColor('#ffb42b')"></li>
+			<li><img src="img/watermelon.png" onclick="imgSlider('img/watermelon.png');changeBgColor('#92ba3c')"></li>
+		</ul>
+	</div>
+</section>
+    
+    <script>
+    	function imgSlider(anything){
+    		document.querySelector('.frutis').src = anything;
+    	}
+
+    	function changeBgColor(color){
+    		const bg = document.querySelector('.bg');
+    		bg.style.background = color;
+    	}
+    </script>
+
+    <script>
+    	function toggleMenu(){
+       let toggleMenu = document.querySelector('.toggleMenu');
+       let navigation = document.querySelector('.navigation');
+
+       toggleMenu.classList.toggle('active');
+       navigation.classList.toggle('active');
+    	}
+    </script>
+</body>
+</html>
